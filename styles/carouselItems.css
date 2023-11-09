@@ -1,0 +1,38 @@
+.carousel_item {
+  flex: none;
+  margin-left: 1.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+.carousel_item:first-child {
+  margin-left: 1.625rem;
+}
+.carousel_item:last-child {
+  margin-right: 1.625rem;
+}
+.carousel_link {
+  display: block;
+  width: 100%;
+  background: var(--color-primary);
+  text-align: center;
+  color: var(--color-white) !important;
+  font-weight: 600;
+  border-radius: 0 0 0.625rem 0.625rem;
+  padding: 0.375rem 3.75rem;
+}
+.carouselItemText {
+  position: absolute;
+  top: 0;
+  padding: 0.375rem 1rem;
+  z-index: 1;
+  color: var(--color-white);
+}
+.carouselItemText span {
+  display: block;
+}
+.carouselItemText span:last-child {
+  font-size: var(--font-lg);
+}

@@ -1,0 +1,11 @@
+.LinkButton {
+  background: var(--color-primary);
+  color: var(--color-white) !important;
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-sm);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  display: block;
+}

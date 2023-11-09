@@ -1,0 +1,59 @@
+.introBox {
+    margin: 30px auto;
+    padding: 50px;
+    width: 70%;
+    background-color: #B41218;
+    color: white;
+}
+.boxSearch{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding: 20px ;
+}
+.container{
+    text-align: center;
+    margin-bottom: 20px;
+  
+}
+
+.container h3{
+    font-size: 1.6rem;
+}
+.boxSearch input{
+    width: 90%;
+    padding: 10px;
+}
+.boxSearch form{
+    display: flex;
+    margin: 30px 0;
+}
+.boxSearch button{
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    background-color: #B41218;
+    color: white;
+    border: 0;
+}
+.boxSearch h2{
+    color: #B41218;
+    font-size: 1.8rem;
+}
+.boxGraduateAll{
+    border: 1px solid #cecece;
+    width: 80%;
+    margin: 40px auto;
+    box-shadow: 3px 3px 3px #ccc;
+}
+.boxGraduate{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 20px;
+}
+.result {
+    text-align: center;
+    margin: 30px;
+}

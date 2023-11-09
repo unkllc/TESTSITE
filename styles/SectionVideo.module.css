@@ -1,0 +1,178 @@
+.bg {
+  background-image: url(/images/BGIBRAMAISINDEXSECTION.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#video {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+  padding: 0 5px;
+  gap: 1rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 98vw;
+}
+
+.text img {
+  margin-top: 50px;
+}
+
+.text p {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+.text button {
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 8px 32px;
+}
+
+.carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  margin: 0 5px;
+  overflow-y: hidden;
+}
+
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+.cards div {
+  width: 150px;
+  height: 220px;
+  position: relative;
+}
+
+.cards div img {
+  width: 150px;
+}
+
+.cards span {
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 14px;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  margin: 0 2px;
+  width: 100%;
+}
+
+.textcdc span {
+  color: #fff;
+  font-size: 0.55rem;
+}
+
+@media (min-width: 744px) {
+  #video {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr;
+    height: 400px;
+    align-items: center;
+  }
+
+  .text {
+    width: auto;
+  }
+
+  .text img {
+    margin-top: 0;
+    width: 180px;
+  }
+
+  .text button {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .cards div {
+    width: 194px;
+    height: 278px;
+  }
+
+  .cards div img {
+    width: 194px;
+  }
+
+  .textcdc span {
+    color: #fff;
+    font-size: 0.55rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  #video {
+    grid-template-rows: auto;
+    grid-template-columns: 80px 1fr 2fr;
+    height: 400px;
+    align-items: center;
+  }
+
+  .textcdc {
+    transform: rotate(90deg);
+    position: relative;
+    top: -40%;
+  }
+
+  .textcdc span {
+    color: #fff;
+    font-size: 0.55rem;
+    white-space: nowrap;
+  }
+
+  .text {
+    width: auto;
+  }
+
+  .text p {
+    width: 330px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .text img {
+    margin: 0 0 20px 0;
+    width: 200px;
+  }
+
+  .text button {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.promo7 {
+  display: flex;
+}
+.promo7 span {
+  border: solid 1px #b41218;
+  border-radius: 0.3rem;
+  font-size: 0.75rem;
+  font-family: 'Poppins', sans-serif;
+  color: #ffff;
+  padding: 0.1rem 0.4rem;
+}

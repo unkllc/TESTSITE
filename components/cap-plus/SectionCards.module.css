@@ -1,0 +1,60 @@
+.container {
+  max-width: 1040px;
+}
+.backgroundImage {
+  background-image: url('/images/section-background.png');
+  width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 2rem 1rem;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backgroundImage::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.025;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.Card {
+  height: 150px;
+  border: solid 1px #e70b0b;
+  background: rgba(18, 0, 1, 0.6);
+  opacity: 0.9;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  position: relative;
+  z-index: 3;
+  width: 140px;
+}
+.Card img {
+  width: 40px;
+}
+.Card span {
+  font-weight: 500;
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
+}

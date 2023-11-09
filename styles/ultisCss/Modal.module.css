@@ -1,0 +1,44 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.modalDialog {
+  background: #fff;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 0.875rem;
+  text-align: center;
+  box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+  position: relative;
+}
+.modalDialog span {
+  color: var(--color-primary);
+  font-weight: bold;
+  margin: 1rem 0 !important;
+  display: block;
+}
+.modalHeader {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+.modalClose {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.modalClose img {
+  filter: invert(99%) sepia(88%) saturate(6388%) hue-rotate(275deg)
+    brightness(99%) contrast(88%) !important;
+}

@@ -1,0 +1,117 @@
+.container {
+  background-image: url('/images/background.png');
+  height: 380px;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.wrapper {
+  height: 100%;
+  max-width: 1080px;
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.infos img {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+.arrow::after {
+  content: url(/svgs/arrowibramais.svg);
+}
+.infos span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 21px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.text span {
+  background-color: #b51118;
+  font-size: 0.625rem;
+  color: #fff;
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+}
+.text label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 0 0.25rem;
+  max-width: 17.875rem;
+}
+
+.text button {
+  background: #b51118;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: -4px 4px 10px rgb(181 17 24 / 64%);
+  cursor: pointer;
+}
+.priceWrap {
+  color: #fff;
+  font-size: 0.875rem;
+}
+.priceWrap img {
+  width: 120px;
+}
+.voucher {
+  background-color: #b51118;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem;
+  font-size: 0.75rem !important;
+  font-weight: 900 !important;
+  display: grid;
+  line-height: 1rem !important;
+}
+.voucher label {
+  font-size: 10px;
+  font-weight: 500;
+}
+@media (min-width: 768px) {
+  .container {
+    height: 65vh;
+  }
+  .text span {
+    font-size: 0.875rem;
+  }
+  .text button {
+    font-size: 1rem;
+  }
+  .priceWrap p {
+    font-size: 1.5rem;
+  }
+  .priceWrap img {
+    width: 250px;
+  }
+  .infos img {
+    width: 160px;
+  }
+  .infos span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 42px;
+  }
+}

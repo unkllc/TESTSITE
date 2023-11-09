@@ -1,0 +1,19 @@
+#video {
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+#video iframe {
+  height: 275px;
+}
+@media (min-width: 650px) {
+  #video iframe {
+    height: 480px;
+  }
+}
+@media (min-width: 1000px) {
+  #video iframe {
+    max-width: 1200px;
+    height: 600px;
+  }
+}

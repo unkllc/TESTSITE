@@ -1,0 +1,70 @@
+#Portal {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PortalContainer {
+  padding: 0 1.5rem;
+  max-width: 414px;
+  margin: auto;
+}
+.gridCards {
+  display: grid;
+  grid-template-areas:
+    'graduacaoPresensial graduaçãoEAD'
+    'posGraduacao complementacao'
+    'extensao EJA'
+    'capacitacao capacitacao';
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 1.25rem;
+}
+.Card {
+  background: #fff;
+  box-shadow: 0px 3.58154px 29.5477px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.625rem;
+  padding: 1.5rem 0.3rem;
+  max-width: 290px;
+  min-width: 280px;
+}
+.Card:last-child {
+  background: #b41218;
+  color: #fff !important;
+}
+.Card strong {
+  margin-top: 0.75rem;
+  font-size: 0.625rem;
+  text-align: center;
+}
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.modalForm select {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.modalButton {
+  background: var(--color-primary);
+  border: none;
+  margin: 1rem 0;
+  color: #fff;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .PortalContainer {
+    max-width: 80%;
+  }
+  .Card {
+    height: 200px;
+  }
+  .Card strong {
+    font-size: 1.125rem;
+  }
+}

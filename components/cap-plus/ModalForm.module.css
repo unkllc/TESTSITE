@@ -1,0 +1,166 @@
+.overflow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(000, 000, 000, 0.6);
+  z-index: 10;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.show {
+  display: flex !important;
+}
+.modal {
+  width: 80vw;
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.modal form {
+  padding: 0 2rem 2rem;
+  overflow: auto;
+  height: 70vh;
+}
+.inputGroup {
+  width: 100%;
+  display: inline-block;
+  gap: 20px;
+}
+.inputGroup label {
+  display: block;
+  font-weight: bold;
+}
+.inputGroup input,
+.inputGroup select {
+  width: 100%;
+  border-radius: 0.625rem;
+  padding: 0.5rem;
+  border: solid 2px black;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.btn button {
+  cursor: pointer;
+  border: none;
+  background-color: #b51118;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.btn button:hover {
+  color: #000;
+}
+.close button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.close {
+  padding: 1rem 2rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 1000px) {
+  .col1 {
+    width: 8.33333333% !important;
+  }
+  .col2 {
+    width: 16.66666667% !important;
+  }
+  .col3 {
+    width: 25% !important;
+  }
+  .col4 {
+    width: 33.33333333% !important;
+  }
+  .col5 {
+    width: 41.66666667% !important;
+  }
+  .col6 {
+    width: 50% !important;
+  }
+  .col7 {
+    width: 58.33333333% !important;
+  }
+  .col8 {
+    width: 66.66666667% !important;
+  }
+  .col9 {
+    width: 75% !important;
+  }
+  .col10 {
+    width: 83.33333333% !important;
+  }
+  .col11 {
+    width: 91.66666667% !important;
+  }
+  .col12 {
+    width: 100% !important;
+  }
+  .modal {
+    width: 40vw;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 1rem;
+  }
+  .modal form {
+    padding: 0 2rem 2rem;
+  }
+  .inputGroup {
+    padding: 1rem 0.5rem;
+    width: auto;
+    display: inline-block;
+    gap: 20px;
+  }
+  .inputGroup label {
+    display: block;
+    font-weight: bold;
+  }
+  .inputGroup input,
+  .inputGroup select {
+    width: 100%;
+    border-radius: 0.625rem;
+    padding: 0.5rem;
+    border: solid 2px black;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .btn button {
+    cursor: pointer;
+    border: none;
+    background-color: #b51118;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .btn button:hover {
+    color: #000;
+  }
+  .close button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .close {
+    padding: 1rem 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

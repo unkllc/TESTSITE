@@ -1,0 +1,45 @@
+#Banco {
+  padding: 0;
+}
+#Banco button {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 0.675rem;
+  padding: 0.5rem;
+  width: 100%;
+  margin: 1rem 0;
+}
+#Banco button:disabled {
+  opacity: 0.5;
+}
+.container {
+  max-width: 550px;
+  margin: auto;
+  padding: 0 1rem;
+}
+.container h4 {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+.container h5 {
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.inputGroup {
+  margin: 1rem 0;
+}
+.inputGroup label {
+  display: block;
+  font-weight: bold;
+}
+.inputGroup input,
+.inputGroup select,
+.inputGroup textarea {
+  width: 100%;
+  border-radius: 0.625rem;
+  padding: 0.5rem;
+  border: solid 2px black;
+  resize: none;
+}

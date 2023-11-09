@@ -1,0 +1,148 @@
+#footer_menu {
+  background: #000;
+  color: #fff;
+  padding: 1rem 0;
+}
+#footer_menu strong {
+  margin: 1rem 0;
+  display: block;
+}
+#footer_menu a {
+  color: #fff;
+  font-weight: 400;
+}
+#footer_menu ul li {
+  margin-bottom: 0.5rem;
+}
+#copyrights {
+  color: #fff;
+  background: #2a2a2a;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.flex img {
+  margin-right: 0.875rem;
+}
+.flex strong {
+  margin: 0 !important;
+}
+.flex small {
+  font-size: 0.75rem;
+}
+.flex {
+  display: flex;
+}
+.contact ul {
+  font-size: 0.75rem;
+}
+.contact ul li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.contact ul li a {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+.links ul {
+  font-size: 0.75rem;
+}
+.links ul a li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.links ul a li:last-child {
+  cursor: pointer;
+}
+.modalBody form {
+  padding: 1rem;
+}
+.modalBody form div button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.formInputs {
+  width: 100%;
+  text-align: initial;
+  margin-bottom: 10px;
+}
+.formInputs textarea {
+  width: 100% !important;
+  height: 80px !important;
+  padding: 5px;
+  border: solid 1px black;
+  border-radius: 0.5rem;
+}
+.formInputs input {
+  width: 100%;
+  padding: 5px;
+  border: solid 1px black;
+  border-radius: 0.5rem;
+}
+.dataOperator {
+  display: flex;
+  flex-direction: column;
+}
+.dataOperator label {
+  font-weight: 600;
+}
+.imgOperator {
+  margin-right: 10px;
+}
+.imgOperator img {
+  border-radius: 50%;
+  width: 130px;
+}
+.operator {
+  padding: 1rem;
+  text-align: initial;
+  display: flex;
+}
+@media (min-width: 577px) {
+  .grid_footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .operator {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 769px) {
+  /*--------------FOOTER-------------------*/
+
+  .grid_footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (min-width: 993px) {
+  /*--------------FOOTER-------------------*/
+
+  .grid_footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1367px) {
+  .grid_footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

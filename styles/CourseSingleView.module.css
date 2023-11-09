@@ -1,0 +1,313 @@
+.btnLink {
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 0 8px;
+  background-color: #b41218;
+  color: #fff !important;
+  font-size: 11pt;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+.divSemIdeia {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.overflow {
+  overflow: auto;
+  height: 500px;
+}
+.sectionCourseSingle {
+  padding: 2.5rem 0;
+}
+.courseContainer {
+  padding: 0 1.25rem;
+}
+.backgroundImage {
+  padding: 0;
+}
+.courseImage {
+  position: relative;
+  width: 100vw;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+}
+.courseImage::after {
+  content: '';
+  width: 100vw;
+  height: 30vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.5);
+}
+.imageText {
+  color: #fff;
+  position: absolute;
+  bottom: 10%;
+  z-index: 1;
+}
+.imageText strong {
+  font-size: 1.125rem;
+}
+.imageText p {
+  font-size: 0.625rem;
+  max-width: 310px;
+  text-align: justify;
+}
+.courseBox {
+  padding: 3% 5%;
+  box-shadow: 0px 1.18219px 1.18219px rgba(0, 0, 0, 0.25);
+  border-radius: 0.313rem;
+  border-left: solid 0.25rem var(--color-primary);
+}
+
+.courseBoxHeader span {
+  display: inline-block;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.courseBoxHeader img {
+  margin: 0 0.5rem;
+}
+
+.courseBoxContent p {
+  font-size: 0.625rem;
+}
+
+/* tabs */
+.tabSection {
+  padding-top: 0 !important;
+  padding-bottom: 2.5rem;
+}
+.navTabs {
+  border-radius: 0.625rem 0.625rem 0 0;
+  color: #fff;
+  font-size: 0.625rem;
+  display: grid;
+  text-align: center;
+  overflow: auto;
+}
+.navTabs label:nth-child(2) {
+  border-left: 2px solid var(--color-primary);
+  border-right: 2px solid var(--color-primary);
+}
+.tabs {
+  background: #000;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+.tabs.active {
+  background: var(--color-primary);
+  font-weight: 600;
+}
+.content {
+  display: none;
+  background: #fff;
+  box-shadow: 0px 1.18123px 1.18123px rgba(0, 0, 0, 0.25);
+  padding: 0.75rem 0.625rem;
+  width: 100%;
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+.content.active {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+/* tab content */
+.tab1 {
+  display: grid;
+  gap: 1rem;
+}
+
+.tab2 a {
+  max-width: 250px;
+  margin: auto;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.link strong {
+  font-size: 1.125rem;
+}
+.link p {
+  font-size: 1rem;
+  margin: 0 0.875rem 1rem 0;
+  text-align: justify;
+}
+.link a {
+  padding: 0.125rem;
+  max-width: 200px;
+}
+.infos {
+  font-size: 0.625rem;
+  display: flex;
+  justify-content: space-between;
+}
+.infos ul {
+  line-height: 1.5rem;
+  position: relative;
+}
+
+.infos ul li {
+  display: inherit;
+  align-items: center;
+  font-size: 12pt;
+}
+.infos ul li label {
+  font-weight: bold;
+}
+.investimento {
+  margin-bottom: 0.5rem;
+}
+
+.book_checked,
+.awards,
+.clock,
+.time {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin: 0 0;
+}
+.book_checked {
+  background-image: url('/icons/boock-checked.svg');
+}
+.awards {
+  background-image: url('/icons/awards.svg');
+}
+.clock {
+  background-image: url('/icons/clock.svg');
+}
+.time {
+  background-image: url('/icons/time.svg');
+}
+
+.modalTrigger {
+  background: var(--color-primary);
+  color: var(--color-white) !important;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  font-size: var(--font-sm);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  display: block;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.modalContent {
+  padding: 1rem;
+}
+.modalContent form {
+  display: flex;
+  flex-direction: column;
+}
+.modalContent select {
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+.modalContent button {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+@media (min-width: 450px) {
+  .navTabs {
+    grid-auto-flow: column;
+  }
+  .tab1 {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .link {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1000px) {
+  .courseContainer {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .courseImage {
+    height: 80vh;
+    padding: 2.5rem;
+  }
+  .courseImage::after {
+    height: 80vh;
+  }
+  .imageText strong {
+    font-size: 3rem;
+  }
+  .imageText p {
+    font-size: 1rem;
+    max-width: 500px;
+  }
+  /* .courseBox {
+    padding: 0.5rem 1rem;
+  } */
+  .courseBoxHeader span {
+    font-size: 3rem;
+  }
+  .courseBoxHeader img {
+    width: 30px;
+    height: 30px;
+  }
+  .courseBoxContent p {
+    font-size: 1.125rem;
+  }
+
+  /* tabs */
+  .tabSection {
+    padding-top: 0 !important;
+    padding-bottom: 2.5rem;
+  }
+  .navTabs {
+    font-size: 1.25rem;
+  }
+  .tabs {
+    padding: 0.5rem;
+  }
+  .tab1 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* tab content */
+  .link p {
+    font-size: 1rem;
+  }
+  .link a {
+    padding: 0.5rem;
+    max-width: 300px;
+  }
+  .infos {
+    font-size: 1.25rem;
+  }
+  .infos ul {
+    line-height: 2.5rem;
+  }
+  .book_checked,
+  .awards,
+  .clock,
+  .time {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}

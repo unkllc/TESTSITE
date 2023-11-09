@@ -1,0 +1,25 @@
+.Accordion {
+  border: solid 1px #d3d3d3;
+  box-shadow: 7px 7px 22px rgba(181, 17, 24, 0.2);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding: 0 0.5rem;
+}
+.AccordionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: #b41218;
+  position: relative;
+  cursor: pointer;
+}
+
+.AccordionBody {
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  color: #5a5a5a;
+}

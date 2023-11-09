@@ -1,0 +1,15 @@
+#Carousel {
+  position: relative;
+  top: 0rem;
+  padding: 0;
+}
+.carouselHeader {
+  background: var(--color-white);
+  color: var(--color-primary);
+  font-weight: bold !important;
+  padding: 0.56rem 1.25rem 0.7rem;
+  border-radius: 5px 5px 0 0;
+  font-size: 1.75rem;
+  border: none;
+  text-align: center;
+}

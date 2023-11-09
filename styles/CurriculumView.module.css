@@ -1,0 +1,71 @@
+.Curriculums {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.curriculumSection {
+  padding: 0;
+  position: relative;
+}
+.curriculumViewHeader {
+  background-color: #000;
+  color: #fff;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  padding: 2rem 3rem;
+}
+.curriculumViewHeader span {
+  color: var(--color-primary);
+}
+.Card {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 0.5rem;
+  border: solid 1px var(--color-primary);
+}
+.cardBody {
+  padding: 1.5rem;
+  border-top: none;
+  /* border-radius: 0 0 0.5rem 0.5rem; */
+}
+.Card span {
+  text-align: center !important;
+  display: block;
+  color: var(--color-primary);
+  font-weight: bold !important;
+  font-size: 18px;
+}
+.Card p {
+  font-size: 12px;
+  text-align: center;
+  margin: 1rem 0;
+}
+.Card a {
+  width: 75%;
+  margin: auto;
+}
+.vagas_img {
+  background-image: url('/svgs/trabalhe-conosco.svg');
+  height: 230px;
+  background-size: cover;
+}
+.banco_img {
+  background-image: url('/svgs/banco-curriculos.svg');
+  height: 230px;
+  background-size: cover;
+}
+@media (min-width: 600px) {
+  .Curriculums {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1000px) {
+  .curriculumViewHeader {
+    font-size: 2rem;
+    justify-content: flex-start;
+  }
+}

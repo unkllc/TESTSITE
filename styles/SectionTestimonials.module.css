@@ -1,0 +1,142 @@
+#Slider {
+  position: relative;
+  padding-bottom: 6rem;
+}
+.Slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.itemSlider {
+  background: #fff;
+  width: 100%;
+  max-width: 350px;
+  height: 0;
+  border: solid 1px var(--color-primary);
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  z-index: unset;
+  opacity: 0;
+  visibility: hidden;
+}
+.itemSlider.active {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+  padding: 1rem;
+  min-height: 8rem;
+}
+.itemSlider::before {
+  content: '';
+  background-color: rgba(180, 18, 24, 0.38);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0.5rem;
+  left: -0.5rem;
+  z-index: -1;
+  border-radius: 1rem;
+}
+.img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  clip-path: circle();
+}
+.itemSlider strong {
+  font-size: 0.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.itemSlider p {
+  font-size: 0.5rem;
+  max-width: 95%;
+  margin-left: auto;
+  line-height: 18px;
+  text-align: justify;
+}
+.itemBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: ease-in-out all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+.itemBody.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sliderControls {
+  display: flex;
+  justify-content: center;
+  gap: 0.1rem;
+  position: relative;
+  bottom: 1.5rem;
+  width: 100%;
+}
+
+.dot {
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: rgba(56, 56, 56, 0.43);
+  clip-path: circle();
+  display: block;
+}
+.dot.active {
+  background: var(--color-primary) !important;
+}
+.reverse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .itemSlider {
+    max-width: 600px;
+  }
+  .itemSlider::before {
+    top: 1rem;
+    left: -1rem;
+  }
+  .itemSlider.active {
+    padding: 3rem;
+  }
+  .itemBody {
+    gap: 1rem;
+  }
+  .itemSlider p,
+  .itemSlider strong {
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+  .itemSlider strong {
+    font-weight: 600 !important;
+  }
+  .img {
+    margin-top: -1.5rem;
+    width: 100px;
+    height: 100px;
+  }
+  .sliderControls {
+    bottom: 1.875rem;
+    gap: 0.3rem;
+  }
+  .dot {
+    width: 0.625rem;
+    height: 0.625rem;
+    cursor: pointer;
+  }
+  .reverse {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+}

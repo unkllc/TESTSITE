@@ -1,0 +1,79 @@
+#Ead h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1.375rem;
+  text-align: center;
+  white-space: nowrap;
+}
+.description {
+  text-align: center;
+  font-size: var(--font-md);
+  margin-bottom: 3.125rem;
+}
+.Cards {
+  display: grid;
+  grid-row: none;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  border-radius: 0.75rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 240px;
+  min-height: 120px;
+  margin: auto;
+}
+.card strong {
+  font-size: 1rem !important;
+  max-width: 200px;
+  text-align: center;
+}
+
+@media (min-width: 410px) {
+  .Cards {
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 450px;
+    margin: auto;
+  }
+  .card {
+    max-width: 100%;
+    min-height: 270px;
+  }
+}
+@media (min-width: 1000px) {
+  .img {
+    max-width: 100px;
+    min-height: auto;
+  }
+  #Ead h2 {
+    font-size: 2.5rem !important;
+    text-align: center;
+  }
+  .description {
+    font-size: 1.125rem !important;
+    font-weight: 500;
+    margin: 1rem auto;
+    max-width: 65%;
+  }
+  .Cards {
+    margin-top: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    max-width: 1080px;
+  }
+  .card {
+    height: 170px;
+  }
+  .card strong {
+    font-size: 1.25rem !important;
+  }
+  .card p,
+  .card a {
+    font-size: 1rem !important;
+  }
+}

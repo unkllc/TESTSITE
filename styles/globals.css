@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+}
+a {
+  color: inherit !important;
+  text-decoration: none;
+}
+input {
+  outline: 0 !important;
+}
+li {
+  list-style: none;
+}
+
+:root {
+  /* --hue: 159; */
+  /*HLS color mode*/
+  --color-primary: #b41218;
+  --color-second: #980b12;
+  --color-opacity: rgba(180, 18, 24, 0.38);
+  --color-black: #000;
+  --color-white: #fff;
+  /*----fonts----*/
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.125rem;
+  --font-title: 2rem;
+}
+.relative {
+  position: relative !important;
+}
+.absolute {
+  position: absolute !important;
+}
+.hidden {
+  display: none;
+}
+.main-container {
+  min-height: 70vh;
+  overflow: hidden;
+}
+.container {
+  padding: 0 2.5rem;
+}
+.grid {
+  display: grid;
+}
+section {
+  padding: 3.125rem 0;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+.educacao-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 15px;
+}
+.live-iframe {
+  width: 280px;
+  height: 160px;
+  z-index: 9999;
+  position: fixed;
+  bottom: 10%;
+  left: 5%;
+}
+.live-iframe-close {
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* loading styles */
+.basic {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.basic:before {
+  content: '';
+  display: block;
+  height: 100px;
+  width: 100px;
+  -webkit-animation: spin 0.5s infinite linear;
+  animation: spin 0.5s infinite linear;
+  border: 12px var(--color-primary) solid;
+  border-left-color: #535353;
+  border-radius: 100%;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@media (min-width: 768px) {
+  .live-iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+

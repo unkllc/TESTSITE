@@ -1,0 +1,79 @@
+.Card {
+  padding: 0.625rem 1.25rem;
+  border: solid 0.8px var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.625rem;
+  text-align: center;
+  border-radius: 0.375rem;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 2.5rem;
+}
+.cardHeader span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.cardBody {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  position: relative;
+}
+.cardBody::before,
+.cardBody::after {
+  content: '';
+  width: 50%;
+  height: 1px;
+  background: #000;
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cardBody::before {
+  top: 0;
+}
+.cardBody::after {
+  bottom: 0;
+}
+.cardBody ul li {
+  margin-top: 0.5rem;
+}
+.cardBody ul li:last-child {
+  margin-bottom: 0.5rem;
+}
+.gridCards {
+  display: grid;
+  max-width: 1024px;
+}
+.Description {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  line-height: 2rem;
+  font-weight: 500;
+}
+@media (min-width: 700px) {
+  .Card {
+    margin: 0;
+  }
+  .gridCards {
+    margin-top: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+  .gridCards {
+    margin-top: 2.5rem !important;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 1rem;
+  }
+  .Description {
+    width: 50%;
+  }
+}

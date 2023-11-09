@@ -1,0 +1,62 @@
+.slick-next,
+.slick-prev {
+  position: absolute !important;
+  background: #dfdedc !important;
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50% !important;
+  z-index: 9;
+}
+.slick-next:hover,
+.slick-prev:hover {
+  background: #b41218 !important;
+}
+.slick-next::before {
+  content: '' !important;
+  background: url('/icons/arrow.svg') !important;
+  width: 14px !important;
+  height: 14px;
+  position: absolute;
+  filter: invert(8%) sepia(90%) saturate(5307%) hue-rotate(352deg)
+    brightness(117%) contrast(94%) !important;
+  translate: 50% 50%;
+  right: 50%;
+  top: 0%;
+}
+.slick-prev::before {
+  content: '' !important;
+  background: url('/icons/arrow.svg') !important;
+  width: 14px !important;
+  height: 14px;
+  position: absolute;
+  transform: rotate(180deg);
+  filter: invert(8%) sepia(90%) saturate(5307%) hue-rotate(352deg)
+    brightness(117%) contrast(94%) !important;
+  translate: -50% -50%;
+}
+.slick-next:hover::before,
+.slick-prev:hover::before {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg)
+    brightness(103%) contrast(102%) !important;
+}
+
+.slick-next {
+  right: 1rem !important;
+}
+.slick-prev {
+  left: 1rem !important;
+}
+.slick-prev:before,
+.slick-next::before {
+  color: #b41218 !important;
+}
+.slick-slide {
+  opacity: 0.5;
+  transition: ease-in-out all 0.3s !important;
+}
+.slick-slide.slick-active.slick-center.slick-current {
+  opacity: 1;
+}
+.slick-slide.slick-active.slick-current {
+  opacity: 1 !important;
+}
